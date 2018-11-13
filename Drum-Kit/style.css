@@ -12,18 +12,11 @@ body,html {
   font-weight: 600;
 }
 
-.instructions {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-content: center;
-}
-
 h1 {
   font-size: 4em;
   text-align: center;
   color: #d710fd;
-  text-shadow: 0 0 15px white;
+  text-shadow: 0 0 15px black;
 }
 
 .keys {
