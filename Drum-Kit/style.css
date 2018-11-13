@@ -12,7 +12,17 @@ body,html {
   font-weight: 600;
 }
 
+.headingbox {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  min-height: 35vh
+}
+
+
 h1 {
+  flex: 0 1 auto;
   font-size: 4em;
   text-align: center;
   color: #d710fd;
@@ -22,7 +32,7 @@ h1 {
 .keys {
   display: flex;
   flex: 1;
-  min-height: 100vh;
+  min-height: 65vh;
   align-items: center;
   justify-content: center;
 }
