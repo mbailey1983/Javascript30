@@ -1,5 +1,4 @@
 html {
-  font-size: 12px;
   background: url("../Drum-Kit/images/aditya-chinchure-494048-unsplash.jpg") center;
   background-size: cover;
 }
@@ -8,6 +7,14 @@ body,html {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.instructions {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
 }
 
 h1 {
