@@ -1,6 +1,6 @@
 html {
   font-size: 10px;
-  background: url((https://shop.rockstarcreativestudio.com/wp-content/uploads/sites/2/2018/10/Webp.net-compress-image.jpg) bottom center;
+  background: url(images/aditya-chinchure-494048-unsplash.jpg) bottom center;
   background-size: cover;
 }
 
@@ -28,14 +28,14 @@ body,html {
   width: 10rem;
   text-align: center;
   color: white;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.6);
   text-shadow: 0 0 .5rem black;
 }
 
 .playing {
   transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  border-color: #d710fd;
+  box-shadow: 0 0 1rem #d710fd;
 }
 
 kbd {
@@ -47,5 +47,5 @@ kbd {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
-  color: #ffc600;
+  color: #d710fd;
 }
