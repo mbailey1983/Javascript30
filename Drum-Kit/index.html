@@ -73,7 +73,7 @@ function removeTranstion (e) {
 }
 
 const keys = document.querySelectorAll('.key');
-keys.forEach(key => key.addEventListener('transitionsend', removeTransition()));
+keys.forEach(key => key.addEventListener('transitionsend', removeTransition));
 
 window.addEventListener('keydown', playSound);
 </script>
