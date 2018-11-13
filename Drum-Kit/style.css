@@ -1,8 +1,9 @@
 html {
   font-size: 10px;
   background-image: url(
-    https://rockstarcreativestudio.github.io/Javascript30/Drum-Kit/images/aditya-chinchure-494048-unsplash.jpg
-  ) bottom center;
+    "https://rockstarcreativestudio.github.io/Javascript30/Drum-Kit/images/aditya-chinchure-494048-unsplash.jpg"
+  );
+  background-position: center;
   background-size: cover;
 }
 
