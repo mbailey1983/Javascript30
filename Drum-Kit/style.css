@@ -14,7 +14,7 @@ body,html {
 
 .headingbox {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
   align-content: flex-end;
   min-height: 35vh
@@ -31,7 +31,7 @@ h1 {
 
 .keys {
   display: flex;
-  flex: 1;
+  flex-flow: row wrap;
   min-height: 65vh;
   align-items: flex-start;
   justify-content: center;
