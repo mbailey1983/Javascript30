@@ -75,15 +75,19 @@ kbd {
     border: .2rem solid black;
     font-size: 1.1rem;
     width: 8rem;
-    text-shadow: 0 0 .3rem black;
+    text-shadow: 0 0 .5rem black;
     padding: .75rem .25rem;
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 2rem;
   }
 
   kbd {
-    font-size: 2em;
+    font-size: 2rem;
+  }
+
+  .sound {
+    font-size: .9rem;
   }
 }
