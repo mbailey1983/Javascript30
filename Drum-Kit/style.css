@@ -69,3 +69,20 @@ kbd {
   letter-spacing: .1rem;
   color: #d710fd;
 }
+
+@media (min-width: 750px) {
+  .key {
+    border: .2rem solid black;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.1rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 8rem;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.6);
+    text-shadow: 0 0 .3rem black;
+    flex: initial;
+  }
+}
