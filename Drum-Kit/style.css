@@ -70,7 +70,7 @@ kbd {
   color: #d710fd;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 968px) {
   .key {
     border: .2rem solid black;
     font-size: 1.1rem;
