@@ -73,7 +73,7 @@ kbd {
 @media (max-width: 968px) {
 
   .keys {
-    flex-wrap: wrap;
+    flex-wrap: wrap !important;
   }
 
   .key {
