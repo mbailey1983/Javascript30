@@ -80,18 +80,16 @@ keys.forEach( key => key.addEventListener('transitionend', removeTransition));
 
 window.addEventListener('keydown', playSound);
 
-let theDiv = document.querySelector('.keys');
-theDiv.addEventListener ('click', playSoundTouch);
+const theDiv = document.querySelector('.keys');
+theDiv.addEventListener('click', playSoundTouch);
 
-funcion playSoundTouch (e) {
-  let keyTouch = document.querySelector(`.key[data-letter = "${e.keyCode}"]`);
+function playSoundTouch (e) {
+  let keyTouch = document.querySelector(`.key[data-key = "${e.keyCode}"]`);
   if (!audio) return;
   audio.currentTime = 0;
   audio.play();
   key.classList.add('playing');
 }
-
-
 </script>
 
 
