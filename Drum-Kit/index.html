@@ -12,39 +12,39 @@
   </div>
   
   <div class="keys">
-    <div data-key="65" class="key">
+    <div data-key="65" class="key" data-letter="A">
       <kbd>A</kbd>
       <span class="sound">clap</span>
     </div>
-    <div data-key="83" class="key">
+    <div data-key="83" class="key" data-letter="S">
       <kbd>S</kbd>
       <span class="sound">hihat</span>
     </div>
-    <div data-key="68" class="key">
+    <div data-key="68" class="key" data-letter="D">
       <kbd>D</kbd>
       <span class="sound">kick</span>
     </div>
-    <div data-key="70" class="key">
+    <div data-key="70" class="key" data-letter="F">
       <kbd>F</kbd>
       <span class="sound">openhat</span>
     </div>
-    <div data-key="71" class="key">
+    <div data-key="71" class="key" data-letter="G">
       <kbd>G</kbd>
       <span class="sound">boom</span>
     </div>
-    <div data-key="72" class="key">
+    <div data-key="72" class="key" data-letter="H">
       <kbd>H</kbd>
       <span class="sound">ride</span>
     </div>
-    <div data-key="74" class="key">
+    <div data-key="74" class="key" data-letter="J">
       <kbd>J</kbd>
       <span class="sound">snare</span>
     </div>
-    <div data-key="75" class="key">
+    <div data-key="75" class="key" data-letter="K">
       <kbd>K</kbd>
       <span class="sound">tom</span>
     </div>
-    <div data-key="76" class="key">
+    <div data-key="76" class="key" data-letter="L">
       <kbd>L</kbd>
       <span class="sound">tink</span>
     </div>
@@ -68,7 +68,7 @@ function playSound (e) {
   audio.currentTime = 0; //restarts audio on successive keydowns
   audio.play();
   key.classList.add('playing');
-  }
+}
 
 function removeTransition (e) {
   if (event.propertyName != 'transform') return; //skip if it's not a transform
@@ -79,7 +79,19 @@ const keys = document.querySelectorAll('.key');
 keys.forEach( key => key.addEventListener('transitionend', removeTransition));
 
 window.addEventListener('keydown', playSound);
-window.addEventListener('mousedown', playSound);
+
+let theDiv = document.querySelector('.keys');
+theDiv.addEventListener ('click', playSoundTouch);
+
+funcion playSoundTouch (e) {
+  let keyTouch = document.querySelector(`.key[data-letter = "${e.keyCode}"]`);
+  if (!audio) return;
+  audio.currentTime = 0;
+  audio.play();
+  key.classList.add('playing');
+}
+
+
 </script>
 
 
