@@ -31,7 +31,7 @@ h1 {
 
 .keys {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   min-height: 75vh;
   align-items: flex-start;
   justify-content: center;
@@ -71,6 +71,11 @@ kbd {
 }
 
 @media (max-width: 968px) {
+
+  .keys {
+    flex-flow: row wrap;
+  }
+
   .key {
     border: .2rem solid black;
     font-size: 1.1rem;
