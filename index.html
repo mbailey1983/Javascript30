@@ -26,7 +26,7 @@
           <div class="columns">
             <div class="column is-3"></div>
             <div class="column is-6">
-              <progress id="myprogress" class="progress is-primary" max="30"></progress>
+              <progress id="myprogress" class="progress is-primary" max="100"></progress>
             </div>
             <div class="column is-3"></div>
           </div>  
@@ -111,8 +111,7 @@
   <script>
     let numDivs = document.querySelectorAll('.solved').length;
     console.log(numDivs);
-    let progMax = document.getElementById('myprogress').max;
-    console.log(progMax);
+    let progMax = 30;
 
     let progCalc = (numDivs / progMax) * 100;
     console.log(progCalc);
