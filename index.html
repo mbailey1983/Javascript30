@@ -110,6 +110,13 @@
   </section>
   <script>
     let numDivs = document.querySelectorAll('.solved').length;
+    console.log(numDivs);
+    let progMax = document.getElementById('myprogress').max;
+    console.log(progMax);
+    function update(progMax, numDivs) {
+      let progCalc = progMax / numDivs;
+      document.getElementById('myprogress').value = progCalc;
+    }
   </script>
 </body>
 </html>
