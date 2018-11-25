@@ -62,7 +62,7 @@
         <div class="column solved">
           <div class="notification is-success">
             <div class="content has-text-centered is-size-4 has-text-weight-bold">CSS Variables</div>
-            <p class="has-text-centered is-spaced">Adjust CSS variables using Javascript</p>
+            <p class="has-text-centered is-spaced is-size-5">Adjust CSS variables using Javascript</p>
             <div class="buttons is-centered">
               <a class="button is-centered is-dark" href="https://rockstarcreativestudio.github.io/Javascript30/CSS-Variables/" target="_blank">Go to CSS Variables</a>
             </div>
@@ -74,7 +74,7 @@
           <div class="notification is-link">
             <div class="content">
             <p class="has-text-centered is-size-4 has-text-weight-bold">Flex Panel Gallery</p>
-            <p class="has-text-centered is-spaced">A JS based, interactive image gallery with animation.</p>
+            <p class="has-text-centered is-spaced is-size-5">A JS based, interactive image gallery with animation.</p>
             <div class="buttons is-centered">
               <a class="button is-centered is-dark" href="https://rockstarcreativestudio.github.io/Javascript30/Flex-Panel-Gallery/" target="_blank">Go to Flex Panel Gallery</a>
             </div>
@@ -86,7 +86,7 @@
           <div class="notification is-primary">
             <div class="content">
             <p class="has-text-centered is-size-4 has-text-weight-bold">Type Ahead Ajax Search</p>
-            <p class="has-text-centered is-spaced">A city, state search with live filtering</p>
+            <p class="has-text-centered is-spaced is-size-5">A city, state search with live filtering</p>
             <div class="buttons is-centered">
               <a class="button is-centered is-dark" href="https://rockstarcreativestudio.github.io/Javascript30/Type-Ahead/" target="_blank">Go to Type Ahead</a>
             </div>
@@ -110,10 +110,8 @@
   </section>
   <script>
     let numDivs = document.querySelectorAll('.solved').length;
-    console.log(numDivs);
-    let progMax = 30;
 
-    let progCalc = (numDivs / progMax) * 100;
+    let progCalc = (numDivs / 30) * 100;
     console.log(progCalc);
     document.getElementById('myprogress').value = progCalc.toPrecision(4);
 
