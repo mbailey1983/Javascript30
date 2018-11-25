@@ -46,7 +46,7 @@
           <div class="columns">
             <div class="column is-3"></div>
             <div class="column is-6">
-              <progress id="myprogress" class="progress is-primary" max="100"></progress>
+              <progress id="myprogress" class="progress is-primary" max="100"><span id="amount"></span></progress>
             </div>
             <div class="column is-3"></div>
           </div>  
@@ -61,10 +61,8 @@
       <div class="columns is-centered">
         <div class="column solved">
           <div class="notification is-info">
-          <header><div class="content has-text-centered is-size-4 has-text-weight-bold">
-            JS Drum Kit
-          </div></header>
-          <section><div class="content has-text-centered is-spaced is-size-5">A JS based, interactive drum kit. (Desktop only)</div></section>
+          <header><p class="has-text-centered is-size-4 has-text-weight-bold">JS Drum Kit</p></header>
+          <section><p class="has-text-centered is-spaced is-size-5">A JS based, interactive drum kit. (Desktop only)</p></section>
             <footer><div class="buttons is-centered">
               <a class="button is-centered is-dark" href="https://rockstarcreativestudio.github.io/Javascript30/Drum-Kit/" target="_blank">Go to Drum Kit</a>
             </div></footer>
@@ -73,8 +71,8 @@
 
         <div class="column solved">
           <div class="notification is-primary">
-            <header><div class="content has-text-centered is-size-4 has-text-weight-bold">JS + CSS Clock</div></header>
-            <section><div class="content has-text-centered is-spaced is-size-5">A working CSS + JS clock</div></section>
+            <header><p class="has-text-centered is-size-4 has-text-weight-bold">JS + CSS Clock</p></header>
+            <section><p class="has-text-centered is-spaced is-size-5">A working CSS + JS clock</p></section>
             <footer><div class="buttons is-centered">
               <a class="button is-centered is-dark" href="https://rockstarcreativestudio.github.io/Javascript30/Clock/" target="_blank">Go to Clock</a>
             </div></footer>
@@ -83,7 +81,7 @@
 
         <div class="column solved">
           <div class="notification is-success">
-            <header><div class="content has-text-centered is-size-4 has-text-weight-bold">CSS Variables</div></header>
+            <header><p class="has-text-centered is-size-4 has-text-weight-bold">CSS Variables</p></header>
             <section><p class="has-text-centered is-spaced is-size-5">Adjust CSS variables on an image using Javascript.</p></section>
             <footer><div class="buttons is-centered">
               <a class="button is-centered is-dark" href="https://rockstarcreativestudio.github.io/Javascript30/CSS-Variables/" target="_blank">Go to CSS Variables</a>
@@ -139,7 +137,7 @@
     let progCalc = (numDivs / 30) * 100;
     console.log(progCalc);
     document.getElementById('myprogress').value = progCalc.toPrecision(4);
-
+    document.getElementById('amount').innerText = progCalc.toFixed(2) + '%';
   </script>
 </body>
 </html>
