@@ -10,8 +10,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
   <style>
-    .column {
+    header,
+    section,
+    footer{
+      padding: 10px;
+    }
+
+    section {
       height: 100%;
+    }
+
+    .columns {
+      display: flex;
+    }
+
+    .column {
+      display: flex;
+      flex-flow: column nowrap;
     }
   </style>
 </head>
@@ -46,13 +61,13 @@
       <div class="columns is-centered">
         <div class="column solved">
           <div class="notification is-info">
-          <div class="content has-text-centered is-size-4 has-text-weight-bold">
+          <header><div class="content has-text-centered is-size-4 has-text-weight-bold">
             JS Drum Kit
-          </div>
-          <div class="content has-text-centered is-spaced is-size-5">A JS based, interactive drum kit. (Desktop only)</div>
-            <div class="buttons is-centered">
+          </div></header>
+          <section><div class="content has-text-centered is-spaced is-size-5">A JS based, interactive drum kit. (Desktop only)</div></section>
+            <footer><div class="buttons is-centered">
               <a class="button is-centered is-dark" href="https://rockstarcreativestudio.github.io/Javascript30/Drum-Kit/" target="_blank">Go to Drum Kit</a>
-            </div>
+            </div></footer>
         </div>
         </div>
 
