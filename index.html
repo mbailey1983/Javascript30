@@ -114,7 +114,8 @@
     let progMax = document.getElementById('myprogress').max;
     console.log(progMax);
     function update(progMax, numDivs) {
-      let progCalc = progMax / numDivs;
+      let progCalc = numDivs / progMax;
+      console.log(progCalc);
       document.getElementById('myprogress').value = progCalc;
     }
   </script>
