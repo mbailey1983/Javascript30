@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+  <button onclick="backFunction()" id="backBtn" title="Back to Main Page">Back to Main Page</button>
   <div class="headingbox">
       <h1>Press the key. Play some drums</h1>
   </div>
@@ -46,7 +46,7 @@
     </div>
     <div data-key="76" class="key" data-letter="L">
       <kbd>L</kbd>
-      <span class="sound">tink</span>
+      <span class="sound">cowbell</span>
     </div>
   </div>
 
@@ -58,7 +58,7 @@
   <audio data-key="72" src="sounds/ride.wav"></audio>
   <audio data-key="74" src="sounds/snare.wav"></audio>
   <audio data-key="75" src="sounds/tom.wav"></audio>
-  <audio data-key="76" src="sounds/tink.wav"></audio>
+  <audio data-key="76" src="sounds/hicowbel.wav"></audio>
 
 <script>
 function playSound (e) {
@@ -90,6 +90,18 @@ function playSoundTouch (e) {
   audio.currentTime = 0;
   audio.play();
   key.classList.add('playing');
+}
+
+window.onscroll = function() {scrollFunction()};
+//Make button appear when user scrolls
+function loadFunction() {
+      document.getElementById("backBtn").style.display = "block";
+    }
+
+setTimeout(loadFunction, 5000);
+
+function backFunction() {
+  window.open('https://rockstarcreativestudio.github.io/Javascript30/');
 }
 </script>
 
