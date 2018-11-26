@@ -111,7 +111,8 @@ kbd {
     padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
     font-size: 16px; /* Increase font size */
-    transform: translateY(-100%);
+    transform: translateY(100%);
+    transition: transform 0.5s;
 }
 
 #backBtn:hover {
