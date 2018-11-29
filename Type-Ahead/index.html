@@ -7,6 +7,7 @@
 </head>
 <body>
 
+  <button onclick="backFunction()" id="backBtn" title="Back to Main Page">Back to Main Page</button>
   <form class="search-form">
     <input type="text" class="search" placeholder="City or State">
     <ul class="suggestions">
@@ -55,6 +56,21 @@ function displayMatches(){
 
   searchInput.addEventListener('change', displayMatches);
   searchInput.addEventListener('keyup', displayMatches);
+
+  window.onscroll = function() {scrollFunction()};
+//Make button appear after a set time
+function loadFunction() {
+      document.getElementById("backBtn").style.display = "block";
+    }
+
+setTimeout(loadFunction, 5000);
+
+function backFunction() {
+  window.history.back();;
+}
+
+const button = document.querySelectorAll('.backBtn');
+
 </script>
   </body>
 </html>

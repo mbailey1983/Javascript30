@@ -5,6 +5,7 @@
   <title>Scoped CSS Variables and JS</title>
 </head>
 <body>
+    <button onclick="backFunction()" id="backBtn" title="Back to Main Page">Back to Main Page</button>
   <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
 
   <div class="controls">
@@ -59,6 +60,26 @@
     input {
       width: 100px;
     }
+
+    #backBtn {
+      display: none; /* Hidden by default */
+      position: fixed; /* Fixed/sticky position */
+      bottom: 20px; /* Place the button at the bottom of the page */
+      right: 30px; /* Place the button 30px from the right */
+      z-index: 99; /* Make sure it does not overlap */
+      border: none; /* Remove borders */
+      outline: none; /* Remove outline */
+      background-color: black; /* Set a background color */
+      color: white; /* Text color */
+      cursor: pointer; /* Add a mouse pointer on hover */
+      padding: 15px; /* Some padding */
+      border-radius: 10px; /* Rounded corners */
+      font-size: 16px; /* Increase font size */
+  }
+  
+  #backBtn:hover {
+    background-color: #555;
+  }
   </style>
 
   <script>
@@ -72,6 +93,20 @@
     inputs.forEach(input => input.addEventListener('change', handleUpdate));
     inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
     inputs.forEach(input => input.addEventListener('touchmove', handleUpdate));
+
+    window.onscroll = function() {scrollFunction()};
+//Make button appear after a set time
+function loadFunction() {
+      document.getElementById("backBtn").style.display = "block";
+    }
+
+setTimeout(loadFunction, 5000);
+
+function backFunction() {
+  window.history.back();;
+}
+
+const button = document.querySelectorAll('.backBtn');
   </script>
 
 </body>
